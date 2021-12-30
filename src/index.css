@@ -11,3 +11,183 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./img/christmas-background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-place {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.level {
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: 7vmin;
+    left: 7vmin;
+    color: #fff;
+    z-index: 1;
+    text-shadow: 1px 1px 2px #f7ff00;
+    background-color: #000000;
+}
+
+.reload {
+    position: absolute;
+    background: transparent;
+    border: none;
+    background-image: url(./img/reload.png);
+    width: 38px;
+    height: 38px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 7vmin;
+    right: 7vmin;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 1;
+}
+
+.reload:hover {
+    transform: scale(1.2);
+}
+
+.button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.start-button {
+    padding: 15px 30px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 31px;
+    background: #e3cb4b;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.start-button:hover {
+    transform: scale(1.2);
+}
+
+.next-button-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.next-level-button {
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: 50vh;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 31px;
+    background: #e3cb4b;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.next-level-button:hover {
+    font-size: 40px;
+}
+
+.flask {
+    position: absolute;
+    width: 8vw;
+    height: 23vw;
+    border: 2px solid #fff;
+    border-radius: 2px 2px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.flask-color {
+    position: relative;
+    height: 22%;
+    width: 100%;
+    list-style: none;
+}
+
+.flask-color.pour-out {
+    animation: pour-out .4s forwards;
+}
+
+@keyframes pour-out {
+    0% {
+      height: 22%;
+    }
+    100% {
+      height: 0;
+    }
+}
+
+.flask-color.pour-in {
+    animation: pour-in .4s cubic-bezier(.2,.6,.8,.4) forwards;
+}
+
+@keyframes pour-in {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 22%;
+    }
+}
+
+.flask-color:last-child {
+    border-radius: inherit;
+}
+
+.jet-of-water {
+    opacity: 1;
+    position: absolute;
+    width: 3px;
+    height: 0;
+    transform: translate(0px, -6%);
+}
+
+.upper {
+    transform: translate(0, -20%);
+}
+
+.lower {
+    transform: translate(0, 0);
+}
