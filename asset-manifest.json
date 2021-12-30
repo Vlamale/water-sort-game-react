@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Vlamale/water-sort-game-react/static/css/main.00f94a17.css",
+    "main.js": "/Vlamale/water-sort-game-react/static/js/main.069072e8.js",
+    "static/js/787.cfe69ec9.chunk.js": "/Vlamale/water-sort-game-react/static/js/787.cfe69ec9.chunk.js",
+    "static/media/christmas-background.jpeg": "/Vlamale/water-sort-game-react/static/media/christmas-background.678b99487e380970732d.jpeg",
+    "index.html": "/Vlamale/water-sort-game-react/index.html",
+    "main.00f94a17.css.map": "/Vlamale/water-sort-game-react/static/css/main.00f94a17.css.map",
+    "main.069072e8.js.map": "/Vlamale/water-sort-game-react/static/js/main.069072e8.js.map",
+    "787.cfe69ec9.chunk.js.map": "/Vlamale/water-sort-game-react/static/js/787.cfe69ec9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00f94a17.css",
+    "static/js/main.069072e8.js"
+  ]
+}
